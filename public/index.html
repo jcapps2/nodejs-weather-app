@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/styles.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        <title>Weatherly</title>
+    </head>
+
+    <body>
+        <main>
+            <section class="section-info">
+                <div class="header__text-box">
+                    <h1 class="heading-primary">
+                        <span class="heading-primary--main">Weatherly</span>
+                        <span class="heading-primary--sub">Enter an address, city, or zip</span>
+                    </h1>
+
+                    <form>
+                        <input type="text" placeholder="Location">
+                        <br>
+                        <button id="button">Submit</button>
+                    </form>
+
+                    <!-- content is hidden on page load, then toggle class with animation -->
+                    <div class="results__container">
+                        <br>
+                        <p class="results__container--location"></p>
+                        <p class="results__container--results"></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+
+        </footer>
+        
+        <!--Need this to run after all elements are available-->
+        <script src="./js/app.js"></script>
+    </body>
+</html>

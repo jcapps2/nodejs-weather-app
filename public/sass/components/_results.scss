@@ -1,0 +1,17 @@
+// Sass partial
+
+.results__container {
+    transform: translate(0%, 50%);
+
+    &--results {
+        font-family: $form-font;
+        font-size: $default-font;
+        color: $color-white;
+    }
+
+    &--location {
+        font-family: $form-font;
+        font-size: $default-font;
+        color: $color-white;
+    }
+}

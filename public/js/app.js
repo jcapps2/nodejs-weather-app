@@ -1,7 +1,7 @@
 const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
-const messageOne = document.querySelector('#message-1')
-const messageTwo = document.querySelector('#message-2')
+const messageOne = document.querySelector('.results__container--location')
+const messageTwo = document.querySelector('.results__container--results')
 
 
 weatherForm.addEventListener('submit', (e) => {
@@ -9,8 +9,8 @@ weatherForm.addEventListener('submit', (e) => {
 
     const location = search.value
 
-    messageOne.textContent = 'Loading...'
-    messageTwo.textContent = ''             // Clears previous search when button is clicked again
+    // messageOne.textContent = 'Loading...'
+    // messageTwo.textContent = ''             // Clears previous search when button is clicked again
 
     // Basically fetch data from this location, and then run this function.
     // Removed http://localhost:3000 because we can't do that once deployed on Heroku.

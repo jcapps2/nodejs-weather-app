@@ -1,0 +1,30 @@
+// Sass partial
+
+button {
+    align-items: flex-end;
+    background-color: $color-primary-dark;
+    border: none;
+    border-radius: 10rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $form-font;
+    font-size: 1.4rem;
+    outline: none;
+    padding: 1.5rem 4rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .2s;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-black, .2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6); 
+            opacity: 0;
+        }
+    }
+}

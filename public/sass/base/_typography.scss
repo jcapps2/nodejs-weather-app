@@ -1,0 +1,26 @@
+// Sass partial
+
+.heading-primary {
+    color: $color-white;
+    margin-bottom: 2rem;
+
+    &--main {
+        display: block;
+        font-family: 'Pacifico';
+        font-size: 6rem;
+        font-weight: 300;
+        letter-spacing: 1.5rem;
+        margin-bottom: 3rem;
+
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+    }
+
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.75;
+    }
+}

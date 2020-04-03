@@ -1,0 +1,25 @@
+/*
+
+need to navigate to the sass folder and run 
+npm run compile:sass
+in order to compile scss to the style.css file
+
+*/
+
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+@import "components/input";
+@import "components/form";
+@import "components/results";
+
+@import "layout/header";
+@import "layout/navigation";
+
+@import "pages/home";

@@ -1,55 +1,139 @@
+/*
+
+need to navigate to the sass folder and run 
+npm run compile:sass
+in order to compile scss to the style.css file
+
+*/
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(0.5rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
 body {
-    color: #333333;
-    font-family: Arial;
-    max-width: 650px;
-    margin: 0 auto;
-    padding: 0 16px;
+  box-sizing: border-box; }
 
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.main-content {
-    flex-grow: 1;
-}
-
-footer {
-    color: #888888;
-    border-top: 1px solid #eeeeee;
-    margin-top: 16px;
-    padding: 16px 0;
-}
-
-header {
-    margin-top: 16px;
-    margin-bottom: 48px;
-}
-
-h1 {
-    font-size: 64px;
-    margin-bottom: 16px;
-}
-
-header a {
-    color: #888888;
-    margin-right: 16px;
-    text-decoration: none;
-}
-
-.portrait {
-    width: 250px;
-}
-
-input {
-    border: 1px solid #cccccc;
-    padding: 8px;
-}
+.heading-primary {
+  color: #fff;
+  margin-bottom: 2rem; }
+  .heading-primary--main {
+    display: block;
+    font-family: 'Pacifico';
+    font-size: 6rem;
+    font-weight: 300;
+    letter-spacing: 1.5rem;
+    margin-bottom: 3rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75; }
 
 button {
-    cursor: pointer;
-    border: 1px solid #888888;
-    background: #888888;
-    color: white;
-    padding: 8px;
-}
+  align-items: flex-end;
+  background-color: #42a5f5;
+  border: none;
+  border-radius: 10rem;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  outline: none;
+  padding: 1.5rem 4rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .2s; }
+  button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    button:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0; }
+
+input {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 2px;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem 2rem;
+  text-align: start;
+  width: 50%; }
+  input:active, input:focus {
+    outline-color: #fff3e0; }
+
+form {
+  position: relative; }
+
+.results__container {
+  transform: translate(0%, 50%); }
+  .results__container--results {
+    font-family: "Lato", sans-serif;
+    font-size: 1.6rem;
+    color: #fff; }
+  .results__container--location {
+    font-family: "Lato", sans-serif;
+    font-size: 1.6rem;
+    color: #fff; }
+
+.header__text-box {
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.heading-primary--sub {
+  font-family: "Lato", sans-serif; }
+
+.navigation {
+  font-size: 1.6rem; }
+
+.section-info {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(255, 204, 128, 0.8), rgba(66, 165, 245, 0.8)), url("../img/hills.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative; }
